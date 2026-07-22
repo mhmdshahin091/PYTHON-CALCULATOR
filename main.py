@@ -7,8 +7,9 @@ print("1. Add")
 print("2. Subtract")
 print("3. Multiply")
 print("4. Divide")
+print("5. Modulus")
 
-choice = input("Choose an operation (1-4): ")
+choice = input("Choose an operation (1-5): ")
 
 if choice == "1":
     print("Result:", a + b)
@@ -19,7 +20,9 @@ elif choice == "3":
 elif choice == "4":
     if b != 0:
         print("Result:", a / b)
-    else:
+elif choice == "5":
+    print("Result:", a % b)        
+
         print("Cannot divide by zero")
 else:
     print("Invalid choice")
